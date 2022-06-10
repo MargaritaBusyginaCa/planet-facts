@@ -1,0 +1,52 @@
+.planet-page{
+  padding: 1rem;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.planet-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.planet-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.planet-img img{
+    max-width: 400px;
+    margin-left: 100px;
+}
+.planet-info{
+    flex: 0 0 25%;
+}
+.planet-info-main h1{
+  font-family: var(--ff-antonio);
+  font-size: 80px;
+}
+.planet-info-main p{
+    max-width: 90%;
+    line-height: 25px;
+    font-weight: 300;
+    margin: 0;
+}
+.source-info{
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: #ffffffc5;
+}
+.source-info p{margin-right: 5px;}
+.source-info img{margin-left: 4px;}
+.source-info a{
+    color: #ffffffc5;
+}
+.interactive-button-container{
+    display: flex;
+}
+

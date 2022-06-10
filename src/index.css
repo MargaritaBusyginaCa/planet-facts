@@ -1,4 +1,28 @@
+:root{
+    --clr-white:#FFFF;
+    --clr-dark-space:#070724;
+    --clr-dark-grey:#38384F;
+    --clr-light-grey:#838391 ;
+    --clr-light-blue:#419EBB;
+    --clr-sand:#EDA249;
+    --clr-violet:#6F2ED6 ;
+    --clr-light-orange:#D14C32 ;
+    --clr-light-red :#D83A34;
+    --clr-dark-orange:#CD5120;
+    --clr-indigo:#1EC2A4;
+    --clr-siren:#2D68F0;
+    
+    --ff-antonio:'Antonio', sans-serif;
+    --ff-spartan:'League Spartan', sans-serif;
+    
+}
 body{
-    font-family: 'Antonio', sans-serif;
-    /* font-family: 'League Spartan', sans-serif; */
+   height: 100vh;
+   width: 100%;
+   font-family: var(--ff-spartan );  
+   background-image: url('../public/images/background-stars.svg');
+   background-color: var(--clr-dark-space);
+   color: var(--clr-white);
+   overflow:hidden;
+   
 }
