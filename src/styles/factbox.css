@@ -1,3 +1,27 @@
-.factbox-main-container{
+.factbox-main{
     height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.factbox{
+    padding: 16px;
+    color: #FFFF;
+    border: 1px solid rgb(57, 57, 57);
+    margin:20px;
+    min-width: 190px;
+    max-height: 100px;
+}
+.factbox *{
+    margin: 10px;  
+    text-transform: uppercase;
+}
+.fact-title{
+    color:grey;
+    font-size: 14px;
+    margin: 10px 10px;
+}
+.fact-data{
+    font-size: 40px;
+    font-family: 'Antonio', sans-serif;
 }

@@ -21,8 +21,9 @@ body{
    width: 100%;
    font-family: var(--ff-spartan );  
    background-image: url('../public/images/background-stars.svg');
-   background-color: var(--clr-dark-space);
+   background-color: rgb(9, 9, 28);
    color: var(--clr-white);
-   overflow:hidden;
+   overflow-x: hidden;
+   overflow-y: scroll;
    
 }

@@ -48,5 +48,17 @@
 }
 .interactive-button-container{
     display: flex;
+    background-color: transparent;
+    border: 1px solid rgb(100, 100, 100);
+    cursor: pointer;
+    margin: 20px 0;
+    text-transform: uppercase;
 }
+.interactive-button-container *{
+    margin: 20px;
+}
+/* .interactive-button-container:active{
+    background-color: #419EBB;
+    color: #FFFF;
+} */
 
