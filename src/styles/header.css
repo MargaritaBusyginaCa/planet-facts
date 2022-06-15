@@ -19,3 +19,8 @@ nav{
  text-transform: uppercase;
  font-size: 14px;
 }
+@media(max-width: 870px){
+  .nav{
+    display:none;
+  }
+}

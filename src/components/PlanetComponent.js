@@ -69,9 +69,8 @@ function PlanetComponent(){
           <img src={require(`../assets/planet-${thisPlanet.name.toLowerCase()}-internal.svg`).default} ref={imgRef2} className="secondary-img"/>
           
         </div>
-
+        
         <div className="planet-info">
-
         <div className="planet-info-main">
           <h1>{thisPlanet.name.toUpperCase()}</h1>
           <p ref={pRef1} className="main-img">{thisPlanet.overview.content}</p>

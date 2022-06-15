@@ -27,6 +27,7 @@
 .planet-info-main h1{
   font-family: var(--ff-antonio);
   font-size: 80px;
+  font-weight: 300;
 }
 .planet-info-main p{
     max-width: 90%;
@@ -58,7 +59,7 @@
     margin: 20px;
 }
 .main-img{
-    display: inline;
+    display: inline;   
 }
 .secondary-img{
     display: none;
@@ -80,4 +81,38 @@
 .active{
     background-color:#419EBB;
     
+}
+@media(max-width: 1087px) {
+   .planet-container{
+     flex-direction: column;
+   } 
+   .planet-info{
+    display: flex;
+    justify-content: space-around;
+   }
+   .planet-info-main{
+    flex: 0 0 40%;
+   }
+   .planet-buttons{
+    flex: 0 0 45%;
+    margin:80px 0;
+   }
+   .main-img{
+    margin-right: 100px;
+
+    width: 220px;
+   }
+   .planet-img{
+    margin: 150px;
+
+   }
+   .planet-page{
+    align-items:flex-start;
+    justify-content: flex-start;
+   }
+   #geology-img{
+    max-width: 150px;
+    left: 50px;
+    bottom: -130px;
+   }
 }

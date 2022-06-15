@@ -1,7 +1,7 @@
 .factbox-main{
     height: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 20px;
 }
 .factbox{
@@ -24,4 +24,14 @@
 .fact-data{
     font-size: 40px;
     font-family: 'Antonio', sans-serif;
+}
+@media(max-width: 1087px) {
+  .factbox{
+    font-size: 15px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .factbox-main{
+    width: 100%;
+  }
 }
