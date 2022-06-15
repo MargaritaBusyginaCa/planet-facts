@@ -46,7 +46,7 @@
 .source-info a{
     color: #ffffffc5;
 }
-.interactive-button-container{
+.interactive-btn{
     display: flex;
     background-color: transparent;
     border: 1px solid rgb(100, 100, 100);
@@ -54,11 +54,30 @@
     margin: 20px 0;
     text-transform: uppercase;
 }
-.interactive-button-container *{
+.interactive-btn *{
     margin: 20px;
 }
-/* .interactive-button-container:active{
+.main-img{
+    display: inline;
+}
+.secondary-img{
+    display: none;
+}
+#geology-img{
+    position: absolute;
+    bottom: -110px;
+    left: 110px;
+    max-width: 180px;
+}
+.main--geology-container{
+    position: relative;
+}
+.interactive-button-container:active{
     background-color: #419EBB;
     color: #FFFF;
-} */
+}
 
+.active{
+    background-color:#419EBB;
+    
+}
