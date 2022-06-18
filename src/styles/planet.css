@@ -119,6 +119,10 @@
     left: 50px;
     bottom: -130px;
    }
+   @keyframes move {
+    from {left: 0px;}
+    to {left: 50px;}
+  }
 }
 
 @media(max-width: 877px){
