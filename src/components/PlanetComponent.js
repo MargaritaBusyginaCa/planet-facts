@@ -65,10 +65,10 @@ function PlanetComponent(){
       <div className="planet-container">
         <div className="planet-img">
           <div className="main--geology-container">
-           <img src={require(`../assets/planet-${thisPlanet.name.toLowerCase()}.svg`).default} ref={imgRef1} className="main-img"/>
-           <img src={require(`../assets/geology-${thisPlanet.name.toLowerCase()}.png`).default} ref={imgRef3} className="secondary-img" id="geology-img"/>
+           <img src={require(`../assets/planet-${thisPlanet.name.toLowerCase()}.svg`).default} ref={imgRef1} className="main-img" alt="image of the planet"/>
+           <img src={require(`../assets/geology-${thisPlanet.name.toLowerCase()}.png`).default} ref={imgRef3} className="secondary-img" id="geology-img" alt="img of planet's structure"/>
           </div>
-          <img src={require(`../assets/planet-${thisPlanet.name.toLowerCase()}-internal.svg`).default} ref={imgRef2} className="secondary-img"/>
+          <img src={require(`../assets/planet-${thisPlanet.name.toLowerCase()}-internal.svg`).default} ref={imgRef2} className="secondary-img" alt="img of planet's structure"/>
           
         </div>
         
