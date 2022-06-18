@@ -1,23 +1,57 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import {Link, Routes, Route} from 'react-router-dom'
 import PlanetComponent from "./PlanetComponent"
 import '../styles/header.css'
+
+
 function Header(){
+  const [showMenu, setShowMenu] = useState(false)
+  let styleName = showMenu ? "nav-elements" : "hide"
+
+  
   return(
-      <div>
-          <nav>
+      <div className="main-header-container">
+          <nav> 
+             <div className="logo-menu">
               <div>
-               <Link to="/Mercury" className="nav-logo">The Planets</Link>
+               <Link to="/Mercury" className="nav-logo" onClick={() => setShowMenu(true)}>The Planets</Link>
+               </div>
+               <img src={require("../assets/icon-hamburger.svg").default} className="menu-icon" onClick={() => setShowMenu(!showMenu)}/>
               </div>
-               <div className="nav-elements">
-                 <Link to="/Mercury" className="nav-el">Mercury</Link>
-                 <Link to="/Earth" className="nav-el">Earth</Link>
-                 <Link to="/Venus" className="nav-el">Venus</Link>
-                 <Link to="/Mars" className="nav-el">Mars</Link>
-                 <Link to="/Jupiter" className="nav-el">Jupiter</Link>
-                 <Link to="/Saturn" className="nav-el">Saturn</Link>
-                 <Link to="/Uranus" className="nav-el">Uranus</Link>
-                 <Link to="/Neptune" className="nav-el">Neptune</Link>
+
+               <div className={styleName}>
+                <div className="nav-group-el">
+                   <div className="planet-circle" id="mercury"></div>
+                   <Link to="/Mercury" className="nav-el" onClick={() => setShowMenu(false)}>Mercury</Link>
+                </div>
+                <div className="nav-group-el">
+                   <div className="planet-circle" id="earth"></div>
+                   <Link to="/Earth" className="nav-el" onClick={() => setShowMenu(false)}>Earth</Link>
+                </div>
+                <div className="nav-group-el">
+                   <div className="planet-circle" id="venus"></div>
+                   <Link to="/Venus" className="nav-el" onClick={() => setShowMenu(false)}>Venus</Link>
+                </div>
+                <div className="nav-group-el">
+                   <div className="planet-circle" id="mars"></div>
+                   <Link to="/Mars" className="nav-el" onClick={() => setShowMenu(false)}>Mars</Link>
+                </div>
+                <div className="nav-group-el">
+                   <div className="planet-circle" id="jupiter"></div>
+                   <Link to="/Jupiter" className="nav-el" onClick={() => setShowMenu(false)}>Jupiter</Link>
+                </div>
+                <div className="nav-group-el">
+                    <div className="planet-circle" id="saturn"></div>
+                    <Link to="/Saturn" className="nav-el" onClick={() => setShowMenu(false)}>Saturn</Link>
+                </div>
+                <div className="nav-group-el">
+                    <div className="planet-circle" id="uranus"></div>
+                    <Link to="/Uranus" className="nav-el" onClick={() => setShowMenu(false)}>Uranus</Link>
+                </div>
+                <div className="nav-group-el">
+                   <div className="planet-circle" id="neptune"></div>
+                   <Link to="/Neptune" className="nav-el" onClick={() => setShowMenu(false)}>Neptune</Link>
+                </div>
                 </div> 
             </nav>
 

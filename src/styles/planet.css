@@ -1,6 +1,5 @@
 .planet-page{
   padding: 1rem;
-  width: 90%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,7 +29,6 @@
   font-weight: 300;
 }
 .planet-info-main p{
-    max-width: 90%;
     line-height: 25px;
     font-weight: 300;
     margin: 0;
@@ -115,4 +113,48 @@
     left: 50px;
     bottom: -130px;
    }
+}
+
+@media(max-width: 877px){
+  .planet-page{
+    margin: 0;
+    padding: 0;
+  }
+  .planet-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .planet-info{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .planet-info-main{
+   text-align: center;
+  }
+  .source-info{
+    justify-content: center;
+  }
+  .main-img img{
+    width: 170px;
+  }
+
+  .wiki-p{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .planet-buttons{
+    display: flex;
+    max-height: 100px;
+    justify-content: center;
+    
+  }
+  .num{
+    display: none;
+  }
+  .interactive-btn{
+    max-width: 300px;
+    align-items: center;
+    text-align: center;
+  }
 }

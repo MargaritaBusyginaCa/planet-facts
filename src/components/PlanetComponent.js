@@ -73,9 +73,11 @@ function PlanetComponent(){
         <div className="planet-info">
         <div className="planet-info-main">
           <h1>{thisPlanet.name.toUpperCase()}</h1>
-          <p ref={pRef1} className="main-img">{thisPlanet.overview.content}</p>
-          <p ref={pRef2} className="secondary-img">{thisPlanet.structure.content}</p>
-          <p ref={pRef3} className="secondary-img">{thisPlanet.geology.content}</p>
+          <div className="wiki-p">
+           <p ref={pRef1} className="main-img">{thisPlanet.overview.content}</p>
+           <p ref={pRef2} className="secondary-img">{thisPlanet.structure.content}</p>
+           <p ref={pRef3} className="secondary-img">{thisPlanet.geology.content}</p>
+          </div>
           <div className="source-info">
             <p>Source:</p>
             <a href={thisPlanet.overview.source}>Wikipedia</a>

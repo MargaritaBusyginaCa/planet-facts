@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useRef} from "react"
 import {Link, Routes, Route} from 'react-router-dom'
 import '../index.css'
 import img from '../assets/geology-earth.png';
@@ -7,9 +7,10 @@ import PlanetComponent from "./PlanetComponent";
 import Header from "./Header";
 
 function App(){
+  const body = useRef()
+  console.log(body.current)
     return(
-       
-        <div>
+        <div ref={body}>
           <Header/>  
         </div>
         

@@ -1,3 +1,9 @@
+.header{
+  display: flex;
+}
+.nav-group-el{
+  display: inline;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -12,15 +18,104 @@ nav{
 .nav-logo{
     font-family: 'Antonio', sans-serif;
     font-size: 27px;
-    
 }
 .nav-el{
  padding: 1rem;
  text-transform: uppercase;
  font-size: 14px;
 }
+.menu-icon{
+  display: none;
+}
+.planet-circle{
+  display: none;
+}
+.nav-elements{
+  display: flex;
+  flex-direction: row;
+}
+#nav-elements{
+  display: flex;
+}
+
 @media(max-width: 870px){
-  .nav{
-    display:none;
+  
+  .main-header-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
+  nav{
+    flex-direction: column;
+     width: 100%;
+  }
+  .nav-elements{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index:999;
+    background-color: rgb(9, 9, 28);
+  }
+  .nav-group-el{
+    padding: 1rem 1.4rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.055);
+    display: flex;
+    align-items: center;
+  }
+  .menu-icon{
+    display: block;
+    width: 32px;
+    height: 25px;
+    opacity: 0.5;
+  }
+  .hide{
+    display: none;
+  }
+  .logo-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .planet-circle{
+    margin-top:-5px;
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .nav-el{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  #mercury{
+   background-color: #DEF4FC; 
+  }
+  #earth{
+    background-color: #545BFE; 
+   }
+   #venus{
+    background-color: #F7CC7F; 
+   }
+   #mars{
+    background-color: #FF6A45; 
+   }
+   #jupiter{
+    background-color: #ECAD7A; 
+   }
+   #saturn{
+    background-color: #FCCB6B; 
+   }
+   #uranus{
+    background-color: #65F0D5; 
+   }
+   #neptune{
+    background-color: #497EFA; 
+   }
 }

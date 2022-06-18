@@ -33,5 +33,17 @@
   }
   .factbox-main{
     width: 100%;
+    padding-bottom: 20px;
   }
+}
+@media(max-width:877px){
+  .factbox-main{
+    flex-direction: column;
+    height: inherit;
+   }
+   .factbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
 }
