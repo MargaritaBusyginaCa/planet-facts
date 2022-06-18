@@ -16,7 +16,7 @@
 
 ## Live Version
 
-Please follow this url to run my application: https://roaring-cascaron-bc5620.netlify.app/Mercury
+Please follow this url to run my application: https://roaring-cascaron-bc5620.netlify.app
 
 
 ##  Contact 👋
