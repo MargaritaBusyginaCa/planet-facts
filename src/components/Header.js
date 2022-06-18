@@ -2,13 +2,11 @@ import React, {useState, useEffect} from "react"
 import {Link, Routes, Route} from 'react-router-dom'
 import PlanetComponent from "./PlanetComponent"
 import '../styles/header.css'
-
+import '../index.css'
 
 function Header(){
   const [showMenu, setShowMenu] = useState(false)
   let styleName = showMenu ? "nav-elements" : "hide"
-
-  
   return(
       <div className="main-header-container">
           <nav> 
@@ -56,7 +54,6 @@ function Header(){
             </nav>
 
             <Routes>
-                {/* <Route path="/" element={<PlanetComponent />}></Route> */}
                 <Route path="/:planetName" element={<PlanetComponent />}></Route>
             </Routes>
       </div>
