@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import {Link, Routes, Route} from 'react-router-dom'
+import {Link, Routes, Route, Navigate} from 'react-router-dom'
 import PlanetComponent from "./PlanetComponent"
 import '../styles/header.css'
 import '../index.css'
@@ -7,9 +7,10 @@ import '../index.css'
 function Header(){
   const [showMenu, setShowMenu] = useState(false)
   let styleName = showMenu ? "nav-elements" : "hide"
+  let headerStyle = showMenu ? "fixed-header" : ""
   return(
       <div className="main-header-container">
-          <nav> 
+          <nav className={headerStyle}> 
              <div className="logo-menu">
               <div>
                <Link to="/Mercury" className="nav-logo" onClick={() => setShowMenu(true)}>The Planets</Link>
@@ -54,6 +55,7 @@ function Header(){
             </nav>
 
             <Routes>
+                <Route exact path="/" element={<Navigate replace to="/Mercury" />} />
                 <Route path="/:planetName" element={<PlanetComponent />}></Route>
             </Routes>
       </div>

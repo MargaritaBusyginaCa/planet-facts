@@ -47,7 +47,8 @@ nav{
   }
   nav{
     flex-direction: column;
-     width: 100%;
+    width: 100%;
+    padding: 10px 0;
   }
   .nav-elements{
     display: flex;
@@ -81,6 +82,9 @@ nav{
     display: flex;
     justify-content: space-between;
   }
+  .logo-menu *{
+    margin: 10px;
+  }
   .planet-circle{
     margin-top:-5px;
     height: 20px;
@@ -93,6 +97,12 @@ nav{
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 2px;
+  }
+  .fixed-header{
+    position: fixed;
+    background-color: rgb(9, 9, 28);
+    margin: 0;
+    height: 100%;
   }
   #mercury{
    background-color: #DEF4FC; 

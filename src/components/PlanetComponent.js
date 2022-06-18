@@ -19,9 +19,11 @@ function PlanetComponent(){
   const divRef3 = useRef()
   const thisPlanet = data.find(planet => planet.name === planetName)
   
-  // let mainImg = `../assets/planet-${thisPlanet.name.toLowerCase()}.svg`
-  // let inernalImg = `../assets/planet-${thisPlanet.name.toLowerCase()}-internal.svg`
-  // let geologyImg = `../assets/geology-${thisPlanet.name.toLowerCase()}.svg`
+  const imgBg = require('../assets/background-stars.svg').default
+  const divStyle = {
+    backgroundImage: `url(${imgBg})`,
+    backgroundSize: 'cover'  
+  }
 
   function loadImage(imgName){
     if(imgName === "main"){
@@ -59,7 +61,7 @@ function PlanetComponent(){
  
   }  
   return(
-    <div className="planet-page">
+    <div className="planet-page"  style={divStyle}>
       <div className="planet-container">
         <div className="planet-img">
           <div className="main--geology-container">
